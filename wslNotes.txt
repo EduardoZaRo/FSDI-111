@@ -1,0 +1,42 @@
+#install wsl
+wsl --install
+
+echo $0
+
+#update package repo/binaries
+sudo apt update
+sudo apt upgrade
+
+#install zsh
+sudo apt install zsh
+
+#oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#create dir
+mkdir -p ~/Code/SDGKU
+cd ~/Code/SDGKU
+#to open file explorer
+explorer.exe
+
+#print working directory
+pwd
+
+sudo apt install python3
+sudo apt install python3-pip
+sudo apt install python3-venv
+
+python3 -V
+pip3 -V
+
+python -m venv venv
+
+source venv/bin/activate
+
+
+**************Git video notes******************
+
+git init
+git add -A
+git status
+git commit -m "msg"
